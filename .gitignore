@@ -1,0 +1,6 @@
+/photo/
+/config.py
+/*.log
+/env/
+/.idea/
+/__pycache__/
