@@ -5,6 +5,7 @@ import base64
 
 
 class Cryptographer:
+
     def __init__(self, image, key, text="decrypt"):
         """
         Класс для шифрования/дешифрования текста в изображение.
@@ -155,7 +156,6 @@ class Cryptographer:
         self.image.save(path, "PNG")
         return path
 
-    @property
     def decrypt(self):
         """
         Дешифрование текста из изображения.
