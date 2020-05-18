@@ -180,7 +180,7 @@ def message(update, context):
                 update.message.reply_text(text="Идёт дешифрование...", reply_markup=None)
                 try:
                     crypto = cryptographer.Cryptographer(f"photo/decrypt/before/{res[0]}", res[1])
-                    text = crypto.decrypt
+                    text = crypto.decrypt()
                 except Exception as e:
                     logger.warning(f"Can't decrypt image. User: {user_id}, image: {res[0]}, key: {res[1]}")
                     update.message.reply_text(text="Ошибка при дешифровании.", reply_markup=None)
